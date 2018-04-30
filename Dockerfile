@@ -42,6 +42,9 @@ RUN apk add --update fdk-aac-dev
 RUN cd /tmp/ && wget http://ffmpeg.org/releases/ffmpeg-${FFMPEG_VERSION}.tar.gz \
   && tar zxf ffmpeg-${FFMPEG_VERSION}.tar.gz && rm ffmpeg-${FFMPEG_VERSION}.tar.gz
 
+# make the vod address to open
+RUN chmod -R 777 /opt/data/vod/
+
 # Compile ffmpeg.
 RUN cd /tmp/ffmpeg-${FFMPEG_VERSION} && \
   ./configure \
