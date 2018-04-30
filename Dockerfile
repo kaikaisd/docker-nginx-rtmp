@@ -1,5 +1,5 @@
 FROM alpine:3.3
-MAINTAINER Alfred Gutierrez <alf.g.jr@gmail.com>
+MAINTAINER kaikaisd <m_sv@kaikaisd.link>
 
 ENV NGINX_VERSION 1.12.0
 ENV NGINX_RTMP_VERSION 1.1.11
